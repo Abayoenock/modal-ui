@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body>
+    
+    <dialog id="dialog">
+
+        <form method="dialog" id="get_avatar_image_form">
+
+            <div class="card">
+                <section class="card--head">
+             <div class="card-sub">
+                 <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M6 8c0 1.178.822 2 2 2s2-.822 2-2-.822-2-2-2-2 .822-2 2z"/><path d="M19 8h-2v3h-3v2h3v3h2v-3h3v-2h-3zM4 8c0 2.28 1.72 4 4 4s4-1.72 4-4-1.72-4-4-4-4 1.72-4 4zm6 0c0 1.178-.822 2-2 2s-2-.822-2-2 .822-2 2-2 2 .822 2 2zM4 18c0-1.654 1.346-3 3-3h2c1.654 0 3 1.346 3 3v1h2v-1c0-2.757-2.243-5-5-5H7c-2.757 0-5 2.243-5 5v1h2v-1z"/></svg>
+                 <h2>New User</h2>
+             </div>
+                   
+                    <button class="card--head-close_dialog">
+                        <svg  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="close"><rect width="24" height="24" transform="rotate(180 12 12)" opacity="0"/><path d="M13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l4.29-4.3 4.29 4.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"/></g></g></svg>
+                    </button>
+                </section>
+                <section class="card--body">
+                    <div class="card--body--file">
+                        <label for="userimage">Upload an image</label>
+                        <input id="userimage" type="file" accept=".jpg, .jpeg, .png" name="userimage">
+                    </div>
+                    <p class="card--body--max_upload">* Maximum upload 1mb</p>
+                </section>
+                <section class="card--footer">
+                    <button class="card--footer-clear_btn" type="reset">Clear</button>
+                    <div class="card--footer-menu">
+                        <button class="card--footer-cancel_btn">Cancel</button>
+                        <button type="submit" id="confirmBtn" class="card--footer-cancel_confirm">Confirm</button>
+                    </div>
+                </section>
+            </div>
+
+        </form>
+
+    </dialog>
+
+  
+
+    
+    <button id="add_new_avatar" type="button" class="avatar-button avatar-button__add-new">+</button>
+
+    <dialog id="dialog2" >
+        
+        <form method="dialog" >
+           
+            <section class="card--body">
+               
+                <p class="card--body--max_upload">Are you sure you want to delete </p>
+            </section>
+            <section class="card--footer">
+                
+                <div class="card--footer-menu min-card--footer-menu">
+                    <button class="card--footer-cancel_btn" autofocus>Cancel</button>
+                    <button type="submit" id="confirmDelBtn" class="card--footer-cancel_confirm">Confirm</button>
+                </div>
+            </section>
+        </div>
+            </form>
+            
+            </dialog>
+
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
